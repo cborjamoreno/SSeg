@@ -1803,12 +1803,11 @@ def main():
     parser.add_argument("--strategy", required=True,
                         choices=["list", "random", "grid", "SAM2_guided", "dynamicPoints_onlyA", "dynamicPoints", "dynamicPointsLargestGT"],
                         help="Point selection strategy to use")
-    parser.add_argument("--num-points", type=int, default=30, help="Number of points to select")
+    parser.add_argument("--num-points", type=int, default=25, help="Number of points to select")
     parser.add_argument("--num-classes", type=int, help="Total number of classes (required if no --color-dict)")
     parser.add_argument("--maskSLIC", action="store_true", help="Use maskSLIC for segmentation")
     parser.add_argument("--device", choices=["cuda", "cpu"], default="cuda", help="Device to use (cuda or cpu)")
     parser.add_argument("--visualizations", action="store_true", help="Enable saving visualizations")
-    parser.add_argument("--visualization", action="store_true", dest="visualizations", help=argparse.SUPPRESS)
     parser.add_argument("--strategy-kwargs", type=str, default="{}", help="JSON string of strategy-specific parameters")
     parser.add_argument("--points-file", type=str, help="Path to JSON file containing points for 'list' strategy")
     parser.add_argument("--color-dict", type=str, help="Path to external color dictionary JSON file for evaluation")
