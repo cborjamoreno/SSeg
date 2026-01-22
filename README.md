@@ -4,23 +4,20 @@ Replace placeholders like <PROJECT_NAME>, <PAPER_TITLE>, <YEAR>, <HOMEPAGE_URL>,
 Remove any sections you do not need.
 -->
 
-<h1 align="center">PROJECT_NAME</h1>
-<h3 align="center">VENUE_AND_YEAR</h3>
+<h1 align="center">SSeg</h1>
+<h3 align="center">CV4EO Workshop - WACV 2026</h3>
 
 <div align="center">
-  <a href="AUTHOR1_URL" target="_blank">AUTHOR1_NAME</a><sup>1,*</sup>,
-  <a href="AUTHOR2_URL" target="_blank">AUTHOR2_NAME</a><sup>1,2,*</sup>,
-  <a href="AUTHOR3_URL" target="_blank">AUTHOR3_NAME</a><sup>2</sup>,
-  <a href="AUTHOR4_URL" target="_blank">AUTHOR4_NAME</a><sup>1</sup>
+  <a href="https://github.com/cborjamoreno" target="_blank">Cesar Borja</a>,
+  <a href="https://github.com/cplou99" target="_blank">Carlos Plou</a>,
+  <a >Ruben Martinez-Cantin</a>,
+  <a href="https://github.com/anacmurillo" target="_blank">Ana C. Murillo</a>
 </div>
 
 <div align="center">
-  <sup>1</sup>AFFILIATION1, <sup>2</sup>AFFILIATION2
+  DIIS - Instituto de Investigación en Ingeniería de Aragón (I3A), Universidad de Zaragoza, Spain
 </div>
 
-<div align="center">
-  <sup>*</sup><i>Equal contribution</i>
-</div>
 
 <div align="center">
   <a href="https://sites.google.com/unizar.es/sseg/home"><strong>🌍 Homepage</strong></a> |
