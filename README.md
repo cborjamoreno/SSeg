@@ -1,11 +1,50 @@
-# SSeg
+<!--
+README Template for a Research / Benchmark / Code Release Repository
+Replace placeholders like <PROJECT_NAME>, <PAPER_TITLE>, <YEAR>, <HOMEPAGE_URL>, etc.
+Remove any sections you do not need.
+-->
+
+<h1 align="center">PROJECT_NAME</h1>
+<h3 align="center">VENUE_AND_YEAR</h3>
+
+<div align="center">
+  <a href="AUTHOR1_URL" target="_blank">AUTHOR1_NAME</a><sup>1,*</sup>,
+  <a href="AUTHOR2_URL" target="_blank">AUTHOR2_NAME</a><sup>1,2,*</sup>,
+  <a href="AUTHOR3_URL" target="_blank">AUTHOR3_NAME</a><sup>2</sup>,
+  <a href="AUTHOR4_URL" target="_blank">AUTHOR4_NAME</a><sup>1</sup>
+</div>
+
+<div align="center">
+  <sup>1</sup>AFFILIATION1, <sup>2</sup>AFFILIATION2
+</div>
+
+<div align="center">
+  <sup>*</sup><i>Equal contribution</i>
+</div>
+
+<div align="center">
+  <a href="https://sites.google.com/unizar.es/sseg/home"><strong>🌍 Homepage</strong></a> |
+  <a href="https://arxiv.org/abs/2510.10163"><strong>📝 Paper</strong></a> |
+</div>
+
+---
+
+## 🔔 News
+- 🆕 01/2026: Code released.
+- 🥳 01/2026: Paper accepted at Computer Vision for Earth Observation Workshop Series - WACV 2026.
+
+---
+
+## 📖 Description
 SSeg is a framework for efficient multi-class image segmentation that expands sparse point annotations into full masks using a hybrid SAM2–superpixel strategy with active point sampling
 
 ![SSeg Example](assets/teaser.png)
 
-<video src="https://github.com/user-attachments/assets/1c1ae003-f897-4f4c-9d9e-ee2b4e7cb61f" width="100%" controls></video>
+![SSeg Tool](assets/tool.mp4)
 
-## 1. Environment Setup
+## 🛠️ Requirements
+
+### Environment Setup
 
 ```bash
 conda create -n spuw python=3.10
@@ -13,20 +52,20 @@ conda activate spuw
 pip install -r requirements.txt
 ```
 
-## 2. Download Model Checkpoints
+### Download Model Checkpoints
 
 ```bash
 cd checkpoints/
 ./download_ckpts.sh
 ```
 
-## 3. CUDA & Driver Recommendations
+### CUDA & Driver Recommendations
 
 - This machine uses CUDA 11.5.
 - For best performance, use the same CUDA.
 - If CUDA is not available, the code will automatically run on CPU.
 
-## 4. Running Experiments
+## 🚀 Usage
 
 You can run the framework in two modes:
 
@@ -39,14 +78,14 @@ Best for testing single images and visualizing results in real-time.
 
 ### Option B: Benchmark/Batch Mode
 Best for running experiments on full datasets and generating metrics.
-
+  ```
 - **Benchmark/Batch Mode:**
   ```bash
   python run.py
   ```
   (Requires ground truth images for point-label assignment)
 
-## 5. Configuring Batch Experiments
+### Configuring Batch Experiments
 
 To configure batch experiments, you do not use command-line arguments. Instead, you modify the configuration list directly inside run.py.
 
@@ -96,4 +135,20 @@ These keys can be used inside the experiment dictionary in `run.py`:
 **Debugging**
 - `debug_expanded_masks`: Set to `True` to save individual SAM2 expansion steps.
 
----
+
+## 📜 License
+ Discuss with your supervisor the license that you want to set and include the licenses of any previous repo in which your code was inspired.
+ 
+## 📝 Citation
+```bibtex
+@article{borja2025sparseuwseg,
+  title={SparseUWSeg: Active Sparse Point-Label Augmentation for Underwater Semantic Segmentation},
+  author={Borja, C{\'e}sar and Plou, Carlos and Martinez-Cant{\'\i}n, Rub{\'e}n and Murillo, Ana C},
+  journal={arXiv preprint arXiv:2510.10163},
+  year={2025}
+}
+```
+
+## 🙏 Acknowledgements
+This work was supported by a DGA scholarship and by DGA project T45\_23R, and grants AIA2025-163563-C31, PID2024-159284NB-I00, PID2021-125514NB-I00 and PID2024-158322OB-I00 funded by MCIN/AEI/10.13039/501100011033 and ERDF.
+
